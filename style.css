@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Quicksand,sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://gnodesign.com/templates/movify/assets/images/posters/movie-collection.jpg);
+    background-size: cover;
+    
+}
+
+.Landing-page {
+    background: linear-gradient(187deg, rgba(161, 31, 60, 0.7) 27%, rgba(147, 82, 179, 0.7) 61%);
+    width: 100%;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 0 ;
+}
+.logo-section img{
+    width: 150px;
+}
+
+.nav-items ul li a {
+    color: #fff; 
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-items ul{
+    
+    display: flex;
+
+}
+.nav-items ul li{
+    list-style: none;
+    margin: 0 1rem;
+    font-size: 23px;
+   
+}
+
+.title,
+.supportive-dec p {
+    color: #fff; 
+}
+.sign-Box{
+    display: flex;
+    align-items: center;
+}
+
+.sign-btn{
+    padding: 0.7rem 1.5rem;
+    font-size: 16px;
+    margin: 0 0.5rem;
+    background-color: #9352b3;
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sign-Box img{
+    width: 30px;
+    margin-right: 1rem;
+    
+}
+
+.hero-section{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.search-movie{
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+   margin: 2rem 0;
+    
+
+}
+.search-movie input{
+    width: 100%;
+    min-width: 60vw; 
+    border: none;
+    padding: 1rem;
+    font-size: 17px;
+   outline: none;
+    
+}
+
+.search-movie input::placeholder{
+    padding-left: 1rem;
+}
+
+.search-btn{
+    background-color: #9352b3;
+    border: none;
+    padding: 0.5rem 1.5rem;
+   
+}
+
+.search-btn img{
+    width: 30px;
+}
+
+.supportive-dec{
+    display: flex;
+}
+
+.supportive-dec img{
+    -webkit-filter : hue-rotate(180deg);
+    filter : hue-rotate(180deg);
+}
