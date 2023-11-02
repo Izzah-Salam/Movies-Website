@@ -1,31 +1,40 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
     font-family: Quicksand,sans-serif;
 }
 
+
 .container {
-    width: 100vw;
-    height: 100vh;
     background-image: url(https://gnodesign.com/templates/movify/assets/images/posters/movie-collection.jpg);
     background-size: cover;
+    
     
 }
 
 .Landing-page {
-    background: linear-gradient(187deg, rgba(161, 31, 60, 0.7) 27%, rgba(147, 82, 179, 0.7) 61%);
-    width: 100%;
+    background: linear-gradient(187deg, hsla(347, 68%, 38%, 0.5) 40%, rgba(147, 82, 179, 0.8) 61%);
     height: 100vh;
+
+}
+
+.toggle{
+    display: none;
 }
 
 nav{
+   
     display: flex;
     justify-content: space-evenly;
     padding: 1.5rem 0 ;
+    overflow: hidden;
+    
 }
+
 .logo-section img{
     width: 150px;
 }
@@ -83,7 +92,8 @@ nav{
     align-items: center;
 }
 .title{
-    font-size: 60px;
+    font-size: 55px;
+    text-size-adjust: auto;
     font-weight: bold;
 }
 
@@ -121,10 +131,178 @@ nav{
 }
 
 .supportive-dec{
-    display: flex;
+    text-align: center;
 }
 
 .supportive-dec img{
-    -webkit-filter : hue-rotate(180deg);
-    filter : hue-rotate(180deg);
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 883px){
+
+    .logo-section img{
+        width: 150px;
+    }
+
+    nav{
+        padding: 1.5rem;
+        justify-content: space-around;
+       
+    }
+
+    .nav-items,.sign-Box{
+       display: none;
+    
+    }
+    .toggle{
+        display: flex;
+        
+    }
+
+}
+
+@media screen and (max-width: 660px){
+    .title{
+        font-size: 55px;
+        
+    }
+
+}
+@media screen and (max-width: 593px){
+    .title{
+        font-size: 40px;
+        
+    }
+
+}
+
+@media screen and (max-width: 593px){
+    .title{
+        font-size: 40px;
+        text-align: center;
+        
+    }
+    .search-movie input{  
+       padding: 0.5rem;
+       font-size: 15px;   
+    
+    }
+
+    .search-btn img{
+        width: 20px;
+    }
+
+    .supportive-dec p {
+        text-align: center;
+    }
+
+    .toggle img{
+        width: 40px;
+    }
+
+
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr) ;
+    justify-items: center;
+    gap: 10px;
+    margin-top: -1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+  
+}
+
+.card{
+    margin-bottom: 1.5rem;
+}
+
+.card-img{
+    position: relative;
+}
+
+.card-img img{
+    border-radius: 5px;
+   
+    
+}
+
+.card-btn{
+    position: absolute;
+    left: 80%;
+    background-color: #9352b3;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    top: -2%;
+}
+
+.img-des{
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width:1275px){
+    .cards-container{
+        
+        grid-template-columns: repeat(4,1fr) ;    
+      
+    }
+
+}
+
+@media screen and (max-width:1032px){
+    .cards-container{
+        
+        grid-template-columns: repeat(3,1fr) ;    
+      
+    }
+
+}
+@media screen and (max-width:798px){
+    .cards-container{
+        
+        grid-template-columns: repeat(2,1fr) ;    
+      
+    }
+
+}
+@media screen and (max-width:552px){
+    .cards-container{
+        
+        grid-template-columns: repeat(1,1fr) ;    
+      
+    }
+
+}
+
+.carousel-container{
+    display: flex;
+    justify-content: center;
+   
+    padding: 2rem;
+}
+
+.carousel-button,.carousel-slide{
+    padding: 1rem 2rem;
+    font-size: 20px;
+    background-color: #f5f5f5ed;
+    border:1px solid #dcd8d8ed;
+    margin-inline: 1px;
+    
+}
+
+@media screen and (max-width:930px){
+    .carousel-slide{
+        display: none;
+    }
+   
 }

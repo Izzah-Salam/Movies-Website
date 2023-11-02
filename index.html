@@ -12,11 +12,12 @@
     <div class="container">
 
         <div class="Landing-page">
-
             <nav>
                 <div class="logo-section">
                    <img src="https://gnodesign.com/templates/movify/assets/images/logo-white.svg" alt="movie-logo">
-
+                </div>
+                <div class="toggle">
+                    <img src="./img/toggle.png" width="60px" alt="">
                 </div>
                 <div class="nav-items">
                     <ul>
@@ -30,6 +31,7 @@
                     <button class="sign-btn">Sign In</button>
                 </div>
             </nav>
+        
             <div class="hero-section">
                 <div class="title">WELCOME TO MOVIFY</div>
                 <div class="search-movie">
@@ -38,18 +40,69 @@
                 </div>
                 <div class="supportive-dec">
                     <p>Have a look at our top rated Movies and Description</p>
-                    <div class="link"><img src="./img/banner-arrow.png" width="100px" alt="link-icone"></div>
+                    <div class="link"><img src="./img/arrow.png" width="50px" alt="link-icone"></div>
+                </div>    
+            </div>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="https://image.tmdb.org/t/p/w220_and_h330_face/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg" alt="">
+                    <button class="card-btn">+</button>
                 </div>
-                <div class="cards">
-                    
+                    <div class="img-des">Free Guy</div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="https://image.tmdb.org/t/p/w220_and_h330_face/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg" alt="">
+                    <button class="card-btn">+</button></div>
+                    <div class="img-des">Free Guy</div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="https://image.tmdb.org/t/p/w220_and_h330_face/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg" alt="">
+                    <button class="card-btn">+</button></div>
+                    <div class="img-des">Free Guy</div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="https://image.tmdb.org/t/p/w220_and_h330_face/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg" alt="">
+                    <button class="card-btn">+</button></div>
+                    <div class="img-des">Free Guy</div>
+                </div>
+                <div class="card">
+                    <div class="card-img"><img src="https://image.tmdb.org/t/p/w220_and_h330_face/xmbU4JTUm8rsdtn7Y3Fcm30GpeT.jpg" alt="">
+                    <button class="card-btn">+</button></div>
+                    <div class="img-des">Free Guy</div>
                 </div>
             </div>
-        </div>
-            
-  
-       
-        
+            <div class="carousel-container">
+                <button class="carousel-button prev" onclick="prevSlide()">Prev</button>
+                  <button class="carousel-slide">1</button>
+                  <button class="carousel-slide">2</button>
+                  <button class="carousel-slide">3</button>
+                  <button class="carousel-slide">4</button>
+                  <button class="carousel-slide">5</button>
+                  <button class="carousel-slide">6</button>
+                  <button class="carousel-slide">7</button>
+                  <button class="carousel-slide">8</button>
+                  <button class="carousel-slide">9</button>
+                <button class="carousel-button next" onclick="nextSlide()">Next</button>
+                <div class="carousel-indicators">
+                  <div class="indicator" onclick="currentSlide(1)"></div>
+                  <div class="indicator" onclick="currentSlide(2)"></div>
+                  <div class="indicator" onclick="currentSlide(3)"></div>
+                  <div class="indicator" onclick="currentSlide(4)"></div>
+                  <div class="indicator" onclick="currentSlide(5)"></div>
+                  <div class="indicator" onclick="currentSlide(6)"></div>
+                  <div class="indicator" onclick="currentSlide(7)"></div>
+                  <div class="indicator" onclick="currentSlide(8)"></div>
+                  <div class="indicator" onclick="currentSlide(9)"></div>
+                </div>
+              </div>
+
+
+        </div>        
+          
     </div>
+          
+
 
 
     <script src="./index.js"></script>
