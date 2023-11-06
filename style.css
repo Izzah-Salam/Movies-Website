@@ -17,7 +17,7 @@ body{
 }
 
 .Landing-page {
-    background: linear-gradient(187deg, hsla(347, 68%, 38%, 0.5) 40%, rgba(147, 82, 179, 0.8) 61%);
+    background: linear-gradient(187deg, #a31f3b80 40%, rgba(147, 82, 179, 0.8) 61%);
     height: 100vh;
 
 }
@@ -67,16 +67,22 @@ nav{
     align-items: center;
 }
 
-.sign-btn{
+.sign-btn {
     padding: 0.7rem 1.5rem;
     font-size: 16px;
     margin: 0 0.5rem;
     background-color: #9352b3;
     border: none;
     border-radius: 0.2rem;
+    cursor: pointer;
+    
+}
+.sign-btn a,.sign-btn a:active{
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
+    
 }
 .sign-Box img{
     width: 30px;
@@ -305,4 +311,138 @@ nav{
         display: none;
     }
    
+}
+
+
+/* Sign up Sign in page */
+
+.sign-box{
+    display: grid;
+    grid-template-columns: 1fr 400px; 
+    min-height: 100vh;  
+
+}
+
+
+.fixed{
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    
+}
+
+.fixed a img{
+    margin-right: 2rem;
+}
+
+
+
+.banner{
+    background-image: url(./img/Poster.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 70%;
+   
+}
+.form{
+    padding-top: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    min-height: 90%;
+}
+
+.Title{
+    margin-bottom: 3rem;
+    font-size: 40px;
+    color: #9352b3;
+    text-align: center;
+}
+
+.form label{
+    font-size: 18px;
+    color: rgb(78, 78, 78);
+    /* padding: 1rem; */
+   
+}
+
+.form input{
+    border: none;
+    border-bottom: 2px solid #9352b3;
+    width: 100%;
+     margin-bottom: 1.5rem; 
+    padding: 1rem 0;
+    outline: none;
+    font-size: 19px;
+}
+
+.account-confirm{
+    margin: 2rem 0;
+    display: flex;
+     align-items: center;
+}
+
+.account-confirm p a{
+    text-decoration: none;
+    color: #9352b3;
+    margin-right: 2rem;
+    font-weight: bold;
+}
+.account-confirm .sign-btn{
+    color: white;
+}
+
+
+
+@media screen and (max-width:768px){
+    .sign-box{
+       
+        grid-template-columns: 1fr 200px;      
+    
+    }
+
+}
+
+
+@media screen and (max-width:680px){
+    .sign-box{
+       
+        grid-template-columns: 1fr;      
+    
+    }
+    .banner{
+       
+       display: none;    
+    
+    }
+
+}
+
+
+@media screen and (max-width:483px){
+    
+    .sign-btn {
+        padding: 0.7rem 0.5rem;
+        font-size: 15px;
+        
+        
+        
+    }
+
+}
+@media screen and (max-width:407px){
+    
+    .sign-btn {
+        padding: 0.7rem 0.2rem;  
+        margin: 0.5rem 0;        
+    }
+
 }
