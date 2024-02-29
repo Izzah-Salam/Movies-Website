@@ -256,6 +256,11 @@ nav{
     margin-top: 10px;
     text-transform: uppercase;
     font-weight: bold;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  width: 200px;
     
 }
 

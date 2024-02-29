@@ -5,9 +5,9 @@
 async function FetchingData(page){
     try {         
         document.getElementById("PreLoader").style.display = "block";
-        
         const resolve = await fetch(`https://movieto-api.vercel.app/movie/all?page=${page}`)
         const data = await resolve.json() 
+        console.log(data);
         moviesRender(data)
 
    
@@ -77,3 +77,6 @@ pageValue(value=>{
 
 
 // image - description 
+
+
+
